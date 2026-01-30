@@ -1,0 +1,68 @@
+.SelectedArticles {
+    padding: 96px 0;
+    background-color: #0a0a0a;
+    
+}
+
+.section-title {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+
+.ping-dots1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: 1px solid #f973164d;
+    padding: 8px 16px;
+    border-radius: 3.40282e38px;
+    background-color: #f973161a;
+    margin-bottom: 16px;
+}
+
+.ping-dots1 span {
+    width: 6px;
+    height: 6px;
+    background-color: #f97316;
+    border-radius: 50%;
+    display: inline-block;
+    animation: fadeInUp infinite ease-in-out 2s;
+}
+
+.animationdot1 {
+    width: 8px;
+    height: 8px;
+    background-color: #f97316;
+    border-radius: 50%;
+    animation: fadeInUp infinite ease-in-out 2s;
+}
+
+.hi1 {
+    font-size: 14px;
+    color: #f97316;
+}
+
+
+.btn2 {
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 0.75rem;
+    background-color: oklch(70.5% .213 47.604);
+    border: 0;
+    color: #fff;
+    transition: all 0.4s;
+
+}
+
+.btn2:hover {
+    transform: translateY(-2px)
+}
+
+.detal {
+    font-size: 18px;
+    color: oklch(70.8% 0 0);
+}

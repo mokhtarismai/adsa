@@ -1,0 +1,137 @@
+.sectionWrapper {
+    background-color: #111111;
+    padding: 96px 0;
+
+}
+
+.badgeTop {
+    color: #f97316;
+    background: rgba(249, 115, 22, 0.05);
+    border: 1px solid rgba(249, 115, 22, 0.2);
+    padding: 5px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+
+.mainTitle {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.subTitle {
+    color: oklch(70.8% 0 0);
+    font-size: 18px;
+}
+
+.categoryCard {
+    background-color: #161616;
+    border: 1px solid #1a1a1a;
+    height: 100%;
+    padding: 30px 25px;
+    border-radius: 15px;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.categoryCard:hover {
+    background-color: oklch(70.5% .213 47.604);
+    transform: translateY(-5px);
+    border-color:#16161600 ;
+}
+
+.categoryCard:hover .iconBox {
+    color: white;
+    background-color: #fb923c93;
+}
+
+.iconBox {
+    background-color: rgba(249, 115, 22, 0.1);
+    color: #f97316;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+
+}
+
+.catTitle {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.catCount {
+    color: #555;
+    font-size: 13px;
+    margin: 0;
+}
+
+
+
+
+
+.pingdots1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: 1px solid #f973164d;
+    padding: 8px 16px;
+    border-radius: 3.40282e38px;
+    background-color: #f973161a;
+    margin-bottom: 16px;
+    margin: auto;
+
+}
+
+.pingdots1 span {
+    width: 6px;
+    height: 6px;
+    background-color: #f97316;
+    border-radius: 50%;
+    display: inline-block;
+    animation: fadeInUp infinite ease-in-out 2s;
+}
+
+.animationdot1 {
+    width: 8px;
+    height: 8px;
+    background-color: #f97316;
+    border-radius: 50%;
+    animation: fadeInUp infinite ease-in-out 2s;
+}
+
+.hi1 {
+    font-size: 14px;
+    color: #f97316;
+}
+
+
+@keyframes fadeInUp {
+
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,75 @@
+.heroWrapper {
+    background-color: #0a0a0a;
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+.gridOverlay {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(to right, #1a1a1a 1px, transparent 1px),
+        linear-gradient(to bottom, #1a1a1a 1px, transparent 1px);
+    background-size: 60px 60px; 
+    mask-image: radial-gradient(circle at center, black, transparent 80%);
+    opacity: 1;
+    z-index: -1;
+}
+.circle {
+    width: 384px;
+    height: 384px;
+    background-color: #ff690015;
+    filter: blur(50px);
+    z-index: -1;
+    border-radius: 20%;
+}
+.badgeWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.badge {
+    background: rgba(249, 115, 22, 0.05);
+    border: 1px solid rgba(249, 115, 22, 0.2);
+    padding: 6px 16px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #f97316;
+}
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: #f97316;
+    border-radius: 50%;
+    display: inline-block;
+}
+.badgeText {
+    font-size: 14px;
+    font-weight: 500;
+}
+.mainTitle {
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.highlight {
+  background: linear-gradient(135deg, #f97316, #fbbf24);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.subTitle {
+    color: #888;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .mainTitle {
+        font-size: 2.5rem;
+    }
+}

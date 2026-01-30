@@ -1,0 +1,210 @@
+.sectionContainer {
+    background-color: rgb(10, 10, 10);
+    padding: 96px 0;
+}
+
+.topBadge {
+    color: #f97316;
+    background: rgba(249, 115, 22, 0.05);
+    border: 1px solid rgba(249, 115, 22, 0.2);
+    padding: 4px 15px;
+    border-radius: 50px;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: #f97316;
+    border-radius: 50%;
+}
+
+.sectionTitle {
+    color: #fff;
+    font-weight: 800;
+    font-size: 60px;
+
+}
+
+.sectionSubTitle {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.viewAllBtn {
+    color: #f97316;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.viewAllBtn:hover {
+    color: oklch(75% .183 55.934);
+}
+
+.postCard {
+    background: #111111;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    border: 1px solid #1a1a1a;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.postCard:hover {
+    transform: translateY(-5px);
+}
+
+
+.imageWrapper {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.postImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.postCard:hover .postImg {
+    transform: scale(1.1);
+}
+
+.categoryTag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.cardContent {
+    padding: 25px;
+}
+
+.postTitle {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    text-align: right;
+    transition: all 0.4s ease;
+
+}
+
+.postCard:hover .postTitle {
+    color: #f97316;
+}
+
+.postExcerpt {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: right;
+}
+
+.authorAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.actionBtn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #1a1a1a;
+    color: #f97316;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.postCard:hover .actionBtn {
+
+    background-color: oklch(70.5% .213 47.604);
+    color: white;
+}
+
+.fs12 {
+    font-size: 12px !important;
+}
+
+.fs14 {
+    font-size: 14px !important;
+}
+
+.cursorpointer {
+    cursor: pointer;
+}
+
+.cursorpointer:hove {
+    cursor: pointer;
+}
+
+.pingdots1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: 1px solid #f973164d;
+    padding: 8px 16px;
+    border-radius: 3.40282e38px;
+    background-color: #f973161a;
+    margin-bottom: 16px;
+
+}
+
+.pingdots1 span {
+    width: 6px;
+    height: 6px;
+    background-color: #f97316;
+    border-radius: 50%;
+    display: inline-block;
+    animation: fadeInUp infinite ease-in-out 2s;
+}
+
+.animationdot1 {
+    width: 8px;
+    height: 8px;
+    background-color: #f97316;
+    border-radius: 50%;
+    animation: fadeInUp infinite ease-in-out 2s;
+}
+
+.hi1 {
+    font-size: 14px;
+    color: #f97316;
+}
+
+
+@keyframes fadeInUp {
+
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

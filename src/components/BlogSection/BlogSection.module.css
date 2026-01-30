@@ -1,0 +1,110 @@
+.blogWrapper {
+    background-color: #0a0a0a;
+    padding:0px 0 60px  0;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tabsContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.tabBtn {
+    background: #1a1a1a;
+    color: #888;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition:all 0.3s;
+    font-weight: bolder;
+
+}
+
+.tabBtn:hover {
+    color: #fff;
+}
+
+.tabBtn.active {
+    background: #f97316;
+    color: #fff;
+    }
+
+.searchBox {
+    position: relative;
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+.searchBox i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+}
+
+.searchBox input {
+    width: 100%;
+    background: #080808;
+    border: 1px solid #222;
+    padding: 10px 45px 10px 15px;
+    border-radius: 12px;
+    color: white;
+    outline: none;
+}
+
+.resultsInfo {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.countBadge {
+    color: rgba(255, 255, 255, 0.544);
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.pageNumber, .pageArrow {
+    background: #111;
+    border: 1px solid #1a1a1a;
+    color: #888;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.activePage {
+    background: #f97316;
+    color: white;
+    border-color: #f97316;
+}
+
+.pageNumber:hover:not(.activePage) {
+    border-color: #f97316;
+    color: #f97316;
+}

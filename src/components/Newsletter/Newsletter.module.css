@@ -1,0 +1,149 @@
+.wrapper {
+    background-color: #0a0a0a;
+    padding: 100px 0;
+    direction: rtl;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.circle {
+    width: 600px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #ff69001a;
+    filter: blur(80px) brightness(115%) contrast(100%) saturate(130%) opacity(70%) drop-shadow(0 0 8px rgba(255, 180, 120, 0.45));
+    z-index: -1;
+
+}
+.circle.top-50 {
+    width: 30rem;
+    height: 30rem;
+}
+
+.mainCard {
+    background-color: #111111;
+    border: 1px solid #1a1a1a;
+    border-radius: 30px;
+    padding: 60px 40px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 2000;
+}
+.iconBox {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 0 auto 25px;
+    color: white;
+    font-size: 24px;
+}
+.title {
+    color: white;
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #888;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.subForm {
+    display: flex;
+    gap: 10px;
+    max-width: 550px;
+    margin: 0 auto 30px;
+}
+
+.emailInput {
+    flex-grow: 1;
+    background: #080808;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 15px 20px;
+    color: white;
+    text-align: right;
+    outline: none;
+    transition: 0.3s;
+}
+
+.emailInput:focus {
+    border-color: #f97316;
+}
+
+.subBtn {
+    background: #f97316;
+    color: white;
+    border: none;
+    padding: 0 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.subBtn:hover {
+    background: #ea580c;
+    transform: scale(1.02);
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #555;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row-reverse;
+}
+
+.avatarGroup {
+    display: flex;
+    flex-direction: row;
+}
+
+.miniAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #111;
+    margin-right: -10px;
+    object-fit: cover;
+}
+
+.divider {
+    color: #333;
+}
+
+.unsubscribe {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .subForm {
+        flex-direction: column;
+    }
+
+    .subBtn {
+        padding: 15px;
+    }
+}
+
+.textprime1 {
+    color: #f97316;
+}

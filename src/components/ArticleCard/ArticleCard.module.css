@@ -1,0 +1,57 @@
+.hcard {
+    background: #161616!important; 
+    border: 1px solid #222 !important;
+    min-height: 350px;
+    transition: all 0.5s;
+}
+
+.hcard:hover {
+    outline: 1px solid #ff6a0081 !important;
+}
+
+
+.hcard .image img {
+    transition: all 0.5s;
+}
+.hcard:hover .image img {
+    transform: scale(1.1);
+}
+
+.hovtile{
+    transition: all 0.5s;
+}
+.hcard:hover .hovtile{
+    color: #f97316 !important;
+}
+.fs12 { 
+    font-size: 12px !important; 
+}
+.fs14 { 
+    font-size: 14px !important; 
+}
+
+.textprime1 {
+    color: #f97316 !important;
+    transition: 0.3s;
+}
+
+.textprime1:hover {
+    letter-spacing: 1px;
+}
+.objectcover {
+    object-fit: cover;
+}
+
+.hcard .avatar {
+    width: 45px;
+    height: 45px;
+}
+
+.bg-gradiant-2 {
+    background: linear-gradient(90deg, #f97316 0%, #ed8936 100%);
+    z-index: 2;
+}
+
+.transition-05 {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
