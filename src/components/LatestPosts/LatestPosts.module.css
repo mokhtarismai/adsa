@@ -26,7 +26,6 @@
     color: #fff;
     font-weight: 800;
     font-size: 60px;
-
 }
 
 .sectionSubTitle {
@@ -42,6 +41,7 @@
     font-weight: bold;
     font-size: 16px;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
 .viewAllBtn:hover {
@@ -61,7 +61,6 @@
 .postCard:hover {
     transform: translateY(-5px);
 }
-
 
 .imageWrapper {
     position: relative;
@@ -104,7 +103,6 @@
     margin-bottom: 12px;
     text-align: right;
     transition: all 0.4s ease;
-
 }
 
 .postCard:hover .postTitle {
@@ -140,7 +138,6 @@
 }
 
 .postCard:hover .actionBtn {
-
     background-color: oklch(70.5% .213 47.604);
     color: white;
 }
@@ -157,7 +154,7 @@
     cursor: pointer;
 }
 
-.cursorpointer:hove {
+.cursorpointer:hover {
     cursor: pointer;
 }
 
@@ -171,7 +168,6 @@
     border-radius: 3.40282e38px;
     background-color: #f973161a;
     margin-bottom: 16px;
-
 }
 
 .pingdots1 span {
@@ -196,7 +192,6 @@
     color: #f97316;
 }
 
-
 @keyframes fadeInUp {
 
     0%,
@@ -206,5 +201,56 @@
 
     50% {
         opacity: 1;
+    }
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 992px) {
+    .sectionContainer {
+        padding: 72px 0;
+    }
+
+    .sectionTitle {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sectionTitle {
+        font-size: 32px;
+    }
+
+    .sectionSubTitle {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .imageWrapper {
+        height: 180px;
+    }
+
+    .cardContent {
+        padding: 20px;
+    }
+
+    .postTitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .sectionContainer {
+        padding: 56px 0;
+    }
+
+    .sectionTitle {
+        font-size: 26px;
+    }
+
+    /* في الموبايل الهيدر بيبقى column، فالعنوان يبقى في النص بدل يمين */
+    .sectionTitle,
+    .sectionSubTitle {
+        text-align: center;
     }
 }

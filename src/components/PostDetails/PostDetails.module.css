@@ -9,13 +9,14 @@
 }
 
 .heroSection {
-    height: 65vh;
+    min-height: 65vh;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: flex-end;
     position: relative;
     margin-bottom: 50px;
+    padding-top: 80px;
 }
 
 .breadcrumb {
@@ -29,7 +30,7 @@
     background: rgba(0, 0, 0, 0.252);
     padding: 6px 15px;
     border-radius: 50px;
-
+    flex-wrap: wrap;
 }
 
 .breadcrumbLink {
@@ -45,6 +46,7 @@
 .heroContent {
     max-width: 800px;
     margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 .metaTop {
@@ -53,6 +55,7 @@
     gap: 15px;
     margin-bottom: 20px;
     font-size: 14px;
+    flex-wrap: wrap;
 }
 
 .categoryBadge {
@@ -85,6 +88,7 @@
     height: 56px;
     border-radius: 50%;
     border: 2px solid #f97316;
+    flex-shrink: 0;
 }
 
 .authorName {
@@ -96,7 +100,6 @@
     font-size: 14px;
     font-weight: 400;
     color: #ffffff76;
-
 }
 
 .sidebar {
@@ -148,6 +151,7 @@
     justify-content: center;
     border-radius: 6px;
     font-size: 14px;
+    flex-shrink: 0;
 }
 
 .tableOfContents li:hover {
@@ -181,9 +185,9 @@
     border-radius: 10px;
     font-weight: bold;
     margin-top: 15px;
-    display: flex;         /* تعديل لضمان التوسط */
-    align-items: center;    /* لضبط النص في النص */
-    justify-content: center; /* لضبط النص في النص */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
 }
 
@@ -258,6 +262,7 @@
     justify-content: center;
     border-radius: 12px;
     color: #f97316;
+    flex-shrink: 0;
 }
 
 .tagsList {
@@ -286,6 +291,7 @@
     display: flex;
     gap: 12px;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .shareIcons button {
@@ -307,7 +313,6 @@
     color: white;
 }
 
-
 .authorMainInfo {
     display: flex;
     align-items: center;
@@ -322,6 +327,7 @@
     border-radius: 15px;
     object-fit: cover;
     border: 2px solid #1a1a1a;
+    flex-shrink: 0;
 }
 
 .authorLabel {
@@ -344,4 +350,112 @@
     line-height: 1.6;
     margin: 0;
     max-width: 500px;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 992px) {
+    .sidebar {
+        position: static;
+    }
+
+    .mainTitle {
+        font-size: 2.6rem;
+    }
+
+    .heroSection {
+        min-height: 55vh;
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .postPage {
+        padding-top: 56px;
+    }
+
+     .breadcrumb {
+        top: 20px;
+        right: 20px;
+        left: auto;
+        font-size: 12px;
+        padding: 5px 12px;
+        max-width: calc(100% - 40px);
+    }
+
+    .heroSection {
+        min-height: 45vh;
+        padding-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .mainTitle {
+        font-size: 1.9rem;
+        margin-bottom: 20px;
+    }
+
+    .metaTop {
+        font-size: 12px;
+        gap: 10px;
+    }
+
+    .authorHero {
+        padding: 8px 14px;
+        gap: 10px;
+    }
+
+    .authorAvatar {
+        width: 44px;
+        height: 44px;
+    }
+
+    .sectionHeading {
+        font-size: 1.4rem;
+        margin-top: 28px;
+    }
+
+    .articleBody p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .excerptBox {
+        padding: 18px;
+        font-size: 1rem;
+        margin-bottom: 28px;
+    }
+
+    .tagsSection,
+    .shareSection,
+    .authorFooterCard {
+        padding: 18px;
+    }
+
+    .shareIcons {
+        justify-content: center;
+    }
+
+    .authorMainInfo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .authorBio {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainTitle {
+        font-size: 1.5rem;
+    }
+
+    .footerAvatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .headerTitle span {
+        font-size: 15px;
+    }
 }

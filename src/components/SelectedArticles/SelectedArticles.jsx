@@ -21,19 +21,21 @@ export default function SelectedArticles() {
         <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between mb-5">
           <p className="detal m-0">محتوى منتقى لبدء رحلة تعلمك</p>
           <Link to="/blog" className="btn2 text-decoration-none">
-            عرض الكل <i className="fa-solid fa-angle-left me-2"></i>
+            عرض الكل <i className="fa-solid fa-angle-left me-2 "></i>
           </Link>
         </div>
 
-        {posts.posts
-          .filter((post) => post.featured === true)
-          .map((post) => (
-            <ArticleCard
-              key={post.id}
-              post={post}
-              size={["col-md-4", "col-md-8"]}
-            />
-          ))}
+        <div className="row g-4">
+          {posts.posts
+            .filter((post) => post.featured === true)
+            .map((post) => (
+              <ArticleCard
+                key={post.id}
+                post={post}
+                size={["col-12 col-md-4", "col-12 col-md-8"]}
+              />
+            ))}
+        </div>
       </div>
     </section>
   );

@@ -26,13 +26,15 @@ export default function Hero() {
           انغمس في أسرار المحترفين ونصائح عملية لتطوير مهاراتك في <br />
           التصوير.
         </p>
-        <Link to="/blog" className="hero-button text-decoration-none">
-          استكشف المقالات <i className="fa-solid fa-arrow-left-long me-2"></i>
-        </Link>
-        <button href="#" className="hero-button2 me-3">
-          <i class="fa-solid fa-circle-info iconinfo ms-2"></i>
-          اعرف المزيد
-        </button>
+        <div className="hero-buttons">
+          <Link to="/blog" className="hero-button text-decoration-none">
+            استكشف المقالات <i className="fa-solid fa-arrow-left-long me-2"></i>
+          </Link>
+          <button className="hero-button2">
+            <i className="fa-solid fa-circle-info iconinfo ms-2"></i>
+            اعرف المزيد
+          </button>
+        </div>
         <div className="row mt-5 g-3 text-center">
           <div className="col-6 col-md-3">
             <div className="card1">

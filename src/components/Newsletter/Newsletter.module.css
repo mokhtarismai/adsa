@@ -8,17 +8,12 @@
 }
 
 .circle {
-    width: 600px;
-    height: 300px;
+    width: 30rem;
+    height: 30rem;
     border-radius: 50%;
     background-color: #ff69001a;
     filter: blur(80px) brightness(115%) contrast(100%) saturate(130%) opacity(70%) drop-shadow(0 0 8px rgba(255, 180, 120, 0.45));
     z-index: -1;
-
-}
-.circle.top-50 {
-    width: 30rem;
-    height: 30rem;
 }
 
 .mainCard {
@@ -31,6 +26,7 @@
     margin: 0 auto;
     z-index: 2000;
 }
+
 .iconBox {
     background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
     width: 64px;
@@ -43,6 +39,7 @@
     color: white;
     font-size: 24px;
 }
+
 .title {
     color: white;
     font-weight: 800;
@@ -134,7 +131,38 @@
     cursor: pointer;
 }
 
+.textprime1 {
+    color: #f97316;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 992px) {
+    .wrapper {
+        padding: 80px 0;
+    }
+
+    .circle {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .mainCard {
+        padding: 40px 24px;
+        border-radius: 20px;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+        margin-bottom: 28px;
+    }
+
     .subForm {
         flex-direction: column;
     }
@@ -142,8 +170,34 @@
     .subBtn {
         padding: 15px;
     }
+
+    .footerInfo {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .divider {
+        display: none;
+    }
 }
 
-.textprime1 {
-    color: #f97316;
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 60px 0;
+    }
+
+    .iconBox {
+        width: 52px;
+        height: 52px;
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 1.35rem;
+    }
+
+    .circle {
+        width: 14rem;
+        height: 14rem;
+    }
 }

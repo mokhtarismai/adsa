@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px
+    font-size: 16px;
 }
 
 .tooglenav {
@@ -58,6 +58,7 @@
     transition: 0.3s all ease-in-out;
     position: relative;
 }
+
 .activeLink {
     color: #fff !important;
     background-color: #f97316 !important;
@@ -72,4 +73,56 @@
 .orange-color {
     color: #f97316 !important;
     position: relative;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 991px) {
+    .brand-block {
+        margin-inline-end: auto;
+    }
+
+    /* في الموبايل الـ ul بيبقى flex-column بدل row عشان الروابط متتلزقش مع بعض */
+    .bord {
+        flex-direction: column !important;
+        width: 100%;
+        border-radius: 20px;
+        padding: 16px !important;
+        gap: 8px;
+    }
+
+    .bord .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bord .nav-item.me-lg-2.ms-lg-2 {
+        margin: 0 !important;
+    }
+
+    .activeLink,
+    .acolor {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .w-img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .titleweb {
+        font-size: 16px;
+    }
+
+    .detaltitle {
+        font-size: 10px;
+    }
+
+    .btn-me {
+        padding: 12px 24px;
+        font-size: 13px;
+    }
 }

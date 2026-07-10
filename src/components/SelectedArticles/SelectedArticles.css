@@ -1,7 +1,6 @@
 .SelectedArticles {
     padding: 96px 0;
     background-color: #0a0a0a;
-    
 }
 
 .section-title {
@@ -9,7 +8,6 @@
     font-size: 60px;
     font-weight: 700;
 }
-
 
 .ping-dots1 {
     display: flex;
@@ -45,7 +43,6 @@
     color: #f97316;
 }
 
-
 .btn2 {
     padding: 10px 20px;
     font-weight: 500;
@@ -55,7 +52,7 @@
     border: 0;
     color: #fff;
     transition: all 0.4s;
-
+    white-space: nowrap;
 }
 
 .btn2:hover {
@@ -65,4 +62,38 @@
 .detal {
     font-size: 18px;
     color: oklch(70.8% 0 0);
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 992px) {
+    .section-title {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 768px) {
+    .SelectedArticles {
+        padding: 64px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .detal {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .btn2 {
+        font-size: 15px;
+        padding: 9px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 26px;
+    }
 }

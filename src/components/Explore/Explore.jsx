@@ -23,7 +23,8 @@ export default function Explore() {
           <p className={styles.subTitle}>اعثر على محتوى مصمم حسب اهتماماتك</p>
         </div>
 
-        <div className="row g-4 row-cols-2 row-cols-lg-4 justify-content-start">
+        <div className="row g-4 row-cols-2 row-cols-md-3 row-cols-lg-4 justify-content-start">
+          {" "}
           {categories.map((cat) => (
             <div key={cat.id} className="col">
               <div className={styles.categoryCard}>

@@ -13,6 +13,7 @@ export default function PostDetails() {
 
   if (!post)
     return <div className="text-white text-center py-5">المقال غير موجود</div>;
+
   const renderContent = (content) => {
     const blocks = content.split("\n\n");
 
@@ -41,7 +42,7 @@ export default function PostDetails() {
       >
         <div className="container">
           <nav className={styles.breadcrumb}>
-            <Link to="/Home" className={styles.breadcrumbLink}>
+            <Link to="/" className={styles.breadcrumbLink}>
               <i className="fa-solid fa-house"></i>
             </Link>
 
@@ -83,9 +84,8 @@ export default function PostDetails() {
       </section>
 
       <div className="container pb-5">
-        <div className="row flex-row-reverse">
-          {" "}
-          <div className="col-lg-3">
+        <div className="row">
+          <div className="col-12 col-lg-3 order-2 order-lg-1">
             <aside className={styles.sidebar}>
               <div className={styles.sideCard}>
                 <div className={styles.cardHeader}>
@@ -139,11 +139,12 @@ export default function PostDetails() {
                 <p>اشترك للحصول على أحدث المقالات</p>
                 <Link to="/blog" className={styles.sideCtaBtn}>
                   تصفح المزيد
-                </Link>{" "}
+                </Link>
               </div>
             </aside>
           </div>
-          <div className="col-lg-9">
+
+          <div className="col-12 col-lg-9 order-1 order-lg-2">
             <div className={styles.contentArea}>
               <div className={styles.excerptBox}>
                 <p className="m-0">"{post.excerpt}"</p>
@@ -201,6 +202,7 @@ export default function PostDetails() {
                   </button>
                 </div>
               </div>
+
               <div className={styles.authorFooterCard}>
                 <div className={styles.authorMainInfo}>
                   <img
